@@ -910,6 +910,23 @@ public class MestopolozheniePoZasechkamApplication {
 
         MapWindow = getFrame();
 
+        MapWindow.addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                String[] options = new String[2];
+                options[0]="Да";
+                options[1]="Нет";
+                int vybor = JOptionPane.showOptionDialog(null, "Вы действительно хотите " +
+                        "закрыть программу?", "Подтверждение", JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE, null, options,null);
+
+                if(Objects.equals(vybor, JOptionPane.YES_OPTION)) {
+                    MapWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                } else {
+                    MapWindow.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+                }
+            }
+        });
+
+
         Dimension screensize = Toolkit.getDefaultToolkit().getScreenSize();
 
 //        String type_of_map = (String)types_of_map_combobox.getSelectedItem();
