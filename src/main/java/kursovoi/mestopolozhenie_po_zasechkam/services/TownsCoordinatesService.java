@@ -1,7 +1,6 @@
 package kursovoi.mestopolozhenie_po_zasechkam.services;
 
 import kursovoi.mestopolozhenie_po_zasechkam.repositories.TownsCoordinatesRepository;
-import kursovoi.mestopolozhenie_po_zasechkam.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 /**

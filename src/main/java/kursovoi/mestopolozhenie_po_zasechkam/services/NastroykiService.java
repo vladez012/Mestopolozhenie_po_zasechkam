@@ -2,7 +2,6 @@ package kursovoi.mestopolozhenie_po_zasechkam.services;
 
 import jakarta.transaction.Transactional;
 import kursovoi.mestopolozhenie_po_zasechkam.repositories.NastroykiRepository;
-import kursovoi.mestopolozhenie_po_zasechkam.repositories.ResultsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 /**
